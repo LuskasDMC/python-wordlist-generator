@@ -4,10 +4,10 @@ def main():
     print(80 * '-')
     print(30 * '>' + 'Creator of WordLists' + 30 * '<')
     print(80 * '-')
-
+    print('!!!Write a maximum of 5 words!!!')
     userInput = input('Write the words Mr:\n')
-    file = File('text.txt')
-    file.writeFile(userInput)
+    file = File('wordList.txt')
+    print(file.writeFile(userInput))
     file.close()
 
 if __name__ == '__main__':

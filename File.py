@@ -5,6 +5,10 @@ class File:
 
     def writeFile(self,data):
         data = list(filter(None,data.split(" ")))
+        print(len(data))
+        if len(data) > 5:
+            return 'Word limit exceeded'
+
         if isinstance(data,list):
             wordList = WordList.create(data)
             for el in wordList:
