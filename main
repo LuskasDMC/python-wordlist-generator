@@ -1,0 +1,14 @@
+from File import  File
+
+def main():
+    print(80 * '-')
+    print(30 * '>' + 'Creator of WordLists' + 30 * '<')
+    print(80 * '-')
+
+    userInput = input('Write the words Mr:\n')
+    file = File('text.txt')
+    file.writeFile(userInput)
+    file.close()
+
+if __name__ == '__main__':
+    main()
